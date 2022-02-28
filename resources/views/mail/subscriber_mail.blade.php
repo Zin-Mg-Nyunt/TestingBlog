@@ -1,0 +1,1 @@
+<p>{{ $blog->comments->last()->author->name }} commented on {{ $blog->title }}</p>
