@@ -15,7 +15,7 @@ class CommentController extends Controller
         ], [
             'comment.required'=>'Your comment should not be blank.'
         ]);
-        $c=$blog->comments()->create([
+        $blog->comments()->create([
             'body'=>request('comment'),
             'user_id'=>auth()->user()->id
         ]);

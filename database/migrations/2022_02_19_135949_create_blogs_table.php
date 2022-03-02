@@ -20,6 +20,7 @@ return new class extends Migration {
             $table->string('intro');
             $table->string('slug')->unique();
             $table->text('body');
+            $table->string('thumbnail')->nullable()->default('https://creativecoder.s3.ap-southeast-1.amazonaws.com/blogs/GOLwpsybfhxH0DW8O6tRvpm4jCR6MZvDtGOFgjq0.jpg');
             $table->timestamps();
         });
     }
